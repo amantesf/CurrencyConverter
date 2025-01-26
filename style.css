@@ -29,13 +29,14 @@ body {
 }
 
 .wrapper form{
-    margin: 40px 0 20x 0;
+    margin: 40px 0 20px 0;
 }
 
 form :where(input, select, button) {
     width: 100%;
     outline: none;
     border: none;
+    border-radius: 5px;
 }
 form p{
     font-size: 18px;
@@ -55,17 +56,40 @@ form input:focus{
 
 form .drop-list {
     display: flex;
+    margin-top: 20px;
     align-items: center;
     justify-content: space-between;
 }
-.drop-list, .select-box{
+.drop-list .select-box{
     display: flex;
     height: 45px;
     width: 115px;
+    border-radius: 5px;
     align-items: center;
     justify-content: center;
-    background: red;
+    border: 1px solid grey;
 }
 .select-box select{
     width: auto;
+    font-size: 16px;
+    margin: 0 -5px 0 5px;
+}
+.select-box img {
+    max-width: 25px;
+}
+
+.drop-list .icon{
+    cursor: pointer;
+    font-size: 22px;
+    margin-top: 30px;
+}
+form .exchange-rate{
+    font-size: 17px;
+    margin: 20px 0 30px;
+}
+form button{
+    height: 52px;
+    color: white;
+    cursor: pointer;
+    background: #4545d4;
 }
